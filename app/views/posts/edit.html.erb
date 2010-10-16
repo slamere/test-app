@@ -1,0 +1,9 @@
+<h1> Edit Post</h2>
+
+<% form_for @post do |f| %>
+  <%= render :partial => 'form', :locals => {:f => f} %>
+  <%= f.submit 'Update' %>
+<% end %>
+
+<br>
+<%= link_to "Back to Index", posts_path %>

@@ -46,4 +46,9 @@ TestApp::Application.configure do
 
   # Send deprecation notices to registered listeners
   config.active_support.deprecation = :notify
+
+  # fix for getting 'No such file to load -- shadow_puppet' error when trying
+  # to run production server via moonshine
+  config.eager_load_paths = ['app/models', 'app/controllers', 'app/helpers']
+
 end

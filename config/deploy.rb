@@ -1,1 +1,1 @@
-server 'yourapp.com', :app, :web, :db, :primary => true
+server 'blackbox', :app, :web, :db, :primary => true

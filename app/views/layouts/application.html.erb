@@ -7,8 +7,31 @@
   <%= csrf_meta_tag %>
 </head>
 <body>
+ <div id="container">
+  <div class="left">
+    This text is in the left div
 
-<%= yield %>
+    <br><br><br> More stuff
+  </div>
+  <div class="middle">
+    <div class="header">
+      <%= image_tag('logo.png') %>
+      <h1>This is my AWESOME SITE!</h1>
+      <hr/>
+    </div>
+
+    <%= yield %>
+
+    <div class="footer">
+      <%# 'somehow make it always at bottom' %>
+      <hr/>
+      <%= image_tag('logo.png') %>
+    </div>
+  </div>
+  <div class="right">
+    this text is in the right div
+  </div>
+ </div>
 
 </body>
 </html>

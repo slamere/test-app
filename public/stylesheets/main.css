@@ -1,4 +1,6 @@
 
+/* ==================================== Error Messages ===================== */
+
 .fieldWithErrors {
   padding: 2px;
   background-color: red;
@@ -33,4 +35,66 @@
 #errorExplanation ul li {
   font-size: 12px;
   list-style: square;
-} 
+}
+
+/* ================================= Main Page Styling ===================== */
+
+html, body {
+  height: 100%;
+}
+/* trick to get columns equal size, this container holds the columns we want */
+#container {
+  overflow: hidden;
+  min-height: 100%;
+}
+
+.header {
+  text-align: center;
+}
+
+.header h1 {
+  font-weight: bold;
+  color: #FF0C0C;
+}
+
+.footer {
+  text-align: center;
+}
+
+.left {
+  float: left;
+  width: 19%; /* left 19 instead of 20 to prevent rounding error if adding up to 100% */
+  background-color: #AFAFFF;
+  margin-right: 5px;
+  min-height: 100%;
+
+  /* trick to get columns equal size */
+  padding-bottom: 32767px;
+  margin-bottom: -32767px;
+}
+
+.middle {
+  float: left;
+  width: 60%;
+  min-height: 100%;
+  background-color: #CCCCCC;
+
+  /* trick to get columns equal size */
+  padding-bottom: 32767px;
+  margin-bottom: -32767px;
+}
+
+.right {
+  float: right;
+  width: 20%;
+  background-color: #AFAFFF;
+  margin-left: 5px;
+  min-height: 100%;
+
+  /* trick to get columns equal size */
+  padding-bottom: 32767px;
+  margin-bottom: -32767px;
+}
+
+/* ==================================== Other Styling ====================== */
+
